@@ -97,41 +97,6 @@
 			});
 		}
 
-		/* ==========================================================================
-			Twitter Feed
-		============================================================================= */
-		if( $.fn.tweet ) {
-			$( '.tweets' ).each(function() {
-				var username = $( this ).data( 'twitter-username' );
-				var count = $( this ).data( 'count' ) || 1;
-				$( this ).tweet({
-					modpath: 'php/twitter/index.php', 
-					username: username, 
-					template: [
-						'<span class="tweet_header">', 
-							'<span class="tweet_avatar">', 
-								'<a href="{user_url}"><img src="{avatar_url}" alt="{screen_name}" title="{screen_name}"></a>', 
-							'</span>', 
-							'<span class="tweet_info">', 
-								'<a href="{user_url}" class="tweet_name">{name}</a>', 
-								'<a href="{user_url}" class="tweet_user">@{screen_name}</a>', 
-							'</span>', 
-						'</span>', 
-						'{text}{time}', 
-						'<span class="tweet_intents">', 
-							'<ul>', 
-								'<li><a href="{reply_url}" title="Reply">Reply</a></li>', 
-								'<li><a href="{retweet_url}" title="Retweet">Retweet</a></li>', 
-								'<li><a href="{favorite_url}" title="Favorite">Favorite</a></li>', 
-							'</ul>', 
-						'</span>'
-					].join( '' ), 
-					count: count, 
-					loading_text: 'Loading Tweets...'
-				});
-			});
-		}
-
 	});
 
 	$( document ).ready(function() {
@@ -442,56 +407,6 @@
 			$( '.quovolver blockquote' ).quovolver();
 		}
 		
-
-		/* ==========================================================================
-			Recaptcha
-		============================================================================= */
-		if( typeof Recaptcha !== 'undefined' ) {
-
-			var recaptcha_public_key = '6Leh0OASAAAAALCZcJgsNsfGw5Gl_xRDc_gpfZLH';
-			Recaptcha.create( recaptcha_public_key, 'recaptcha', {
-				theme: 'custom'
-			});
-		}
-
-
-		/* ==========================================================================
-			Contact Form
-		============================================================================= */
-		if( $.fn.validate && $.fn.ajaxSubmit ) {
-
-			(function() {
-				$( '#contact-form' ).validate({
-					submitHandler: function( form ) {
-
-						$( '.ajax-loader', form ).addClass( 'visible' );
-						$( form ).ajaxSubmit(function( response ) {
-							response = $.parseJSON( response );
-							message = $( '.alert', form );
-							if( !message.length ) {
-								message = $( '<div class="alert"></div>' );
-							}
-
-							message
-								.removeClass( 'alert-error alert-success alert-info' )
-								.toggleClass( 'alert-error', !response.success )
-								.toggleClass( 'alert-success', response.success )
-								.html( response.message ).hide().prependTo( form ).slideDown();
-
-							if( response.success ) {
-								$( form ).resetForm();
-							}
-
-							if( typeof Recaptcha !== 'undefined' ) {
-								Recaptcha.reload();
-							}
-
-							$( '.ajax-loader', form ).removeClass( 'visible' );
-						});
-					}
-				});
-			})();
-		}
 
 	});
 
