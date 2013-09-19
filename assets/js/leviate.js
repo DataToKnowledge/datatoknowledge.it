@@ -58,7 +58,8 @@
 									center: [ $( this ).data( 'center-lat' ), $( this ).data( 'center-lng' ) ], 
 									scrollwheel: false, 
 									mapTypeControl: false, 
-									streetViewControl: false, 
+									streetViewControl: false,
+									panControl: false,
 									styles: [
 										{
 											stylers: [
