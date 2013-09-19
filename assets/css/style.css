@@ -911,6 +911,7 @@ iframe[src="about:blank"] {
 
 .team .team-photo {
 	margin: -1px -1px 0;
+	padding: 1px;
 	position: relative;
 	min-height: 32px;
 	background-image: url(../img/preload.gif);
