@@ -36,6 +36,14 @@
 </script>
 <!-- End Google Analytics -->
 
+<!-- Obfuscate the mail address -->
+<script type="text/javascript">
+  function obfuscate( domain, name ) {
+    document.write('<a id="mail" href="mai' + 'lto:' + name + '@' + domain + '">' + name + '@' + domain + '</' + 'a>');
+  }
+</script>
+<!-- End Obfuscate -->
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -395,14 +403,14 @@
 							Via E. Orabona, 4<br>
 							Dipartimento di Informatica<br>
 							70125 - Bari, Italia<br><br>
-							<a id="mail" href="mailto:info@datatoknowledge.it">info@datatoknowledge.it</a>
+							<i class="zocial-email"></i> <script type="text/javascript">obfuscate('datatoknowledge.it', 'info')</script>
 						</div>
 						<div class="sidebar-block">
 							<h3>Seguici sui Social</h3>
 							<ul class="inline-list">
 								<li><a href="https://www.facebook.com/datatoknowledge"><i class="zocial-facebook"></i></a></li>
 								<li><a href="https://www.linkedin.com/company/datatoknowledge"><i class="zocial-linkedin"></i></a></li>
-								<li><a href="https://plus.google.com/100739480597921142044" rel="publisher"><i class="zocial-googleplus"></i></a></li>
+								<li><a href="https://plus.google.com/100739480597921142044"><i class="zocial-googleplus"></i></a></li>
 							</ul>
 						</div>
 					</div>
