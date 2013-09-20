@@ -44,6 +44,12 @@
 </script>
 <!-- End Obfuscate -->
 
+<script type="text/javascript">
+  function linkedin( link, name ) {
+    document.write('<script type="IN/MemberProfile" data-id="http://www.linkedin.com/' + link + '" data-format="hover" data-text="' + name + '" data-related="false"><\/script>');
+  }
+</script>
+
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -98,7 +104,7 @@
 					</div>
 					<div class="slide-wrap">
 						<div class="slide">
-							<img src="images/slider/one.jpg" alt="">
+							<img src="images/slider/four.jpg" alt="">
 						</div>
 						<div class="caption-box">
 							<div class="caption">
@@ -291,13 +297,12 @@
 							<img src="assets/img/lazy_team.png" data-original="images/team/fabio.jpg" alt="">
 						</div>
 						<div class="team-info">
-							<span class="name">Fabio Fumarola</span>
+							<span class="name"><script type="text/javascript">linkedin('pub/fabio-fumarola/7/540/605', 'Fabio Fumarola')</script></span>
 							<span class="role">Team Manager</span>
 						</div>
 						<div class="team-text">
 							Dottore di Ricerca in Informatica. Esperto in Web Mining e Big Data; Analista, Progettista e Sviluppatore Software. Esperto in NoSQL.
 						</div>
-						<a href="http://it.linkedin.com/pub/fabio-fumarola/7/540/605/"><i class="zocial-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="span4">
@@ -306,14 +311,13 @@
 							<img src="assets/img/lazy_team.png" data-original="images/team/fabiana.jpg" alt="">
 						</div>
 						<div class="team-info">
-							<span class="name">Fabiana Lanotte</span>
+							<span class="name"><script type="text/javascript">linkedin('pub/fabiana-lanotte/5a/0/797', 'Fabiana Lanotte')</script></span>
 							<span class="role">Software Developer</span>
 						</div>
 						<div class="team-text">
 							Dottoranda di Ricerca in Informatica, Esperta di Data Mining e Web Mining; Analista, Progettista e Sviluppatore Software.
 							Esperta in Basi di Dati.
 						</div>
-						<a href="http://it.linkedin.com/pub/fabio-fumarola/7/540/605/"><i class="zocial-linkedin"></i></a>
 					</div>
 				</div>
 				<div class="span4">
@@ -322,7 +326,7 @@
 							<img src="assets/img/lazy_team.png" data-original="images/team/andrea.jpg" alt="">
 						</div>
 						<div class="team-info">
-							<span class="name">Andrea Scarpino</span>
+						<span class="name"><script type="text/javascript">linkedin('in/andreascarpino', 'Andrea Scarpino')</script></span>
 							<span class="role">Software Developer</span>
 						</div>
 						<div class="team-text">
@@ -339,7 +343,7 @@
 							<img src="assets/img/lazy_team.png" data-original="images/team/daniele.jpg" alt="">
 						</div>
 						<div class="team-info">
-							<span class="name">Michele Damiano Torelli</span>
+						<span class="name"><script type="text/javascript">linkedin('in/danieletorelli', 'Michele Damiano Torelli')</script></span>
 							<span class="role">Software Developer</span>
 						</div>
 						<div class="team-text">
@@ -353,7 +357,7 @@
 							<img src="assets/img/lazy_team.png" data-original="images/team/gianmichele.jpg" alt="">
 						</div>
 						<div class="team-info">
-							<span class="name">Gianmichele Pavone</span>
+							<span class="name"><script type="text/javascript">linkedin('pub/gianmichele-pavone/41/104/73a', 'Gianmichele Pavone')</script></span>
 							<span class="role">Public Relations</span>
 						</div>
 						<div class="team-text">
@@ -534,6 +538,8 @@
 	<script src="assets/plugins/isotope/jquery.isotope.min.js"></script>
 	<script src="assets/plugins/quovolver/jquery.quovolver.min.js"></script>
 	<script src="assets/plugins/magnificpopup/jquery.magnific-popup.min.js"></script>
+
+	<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
 
 	<!-- Maps -->
 	<script src="assets/plugins/map/gmap3.min.js"></script>
