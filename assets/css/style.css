@@ -381,7 +381,7 @@ iframe[src="about:blank"] {
 	width: 100%;
 	position: relative;
 	background-color: #ffffff;
-	border-top: 4px solid #000000;
+	border-top: 4px solid #235054;
 	-webkit-transform: translateZ(0);
 	-webkit-transition: padding .2s linear, background-color .2s linear;
 	-moz-transition: padding .2s linear, background-color .2s linear;
@@ -398,6 +398,10 @@ iframe[src="about:blank"] {
 	top: 0; left: 0;
 	padding: 20px 0;
 	background-color: #ffffff;
+}
+
+.brand img {
+  border-radius: 100%
 }
 
 .main-header .brand {
