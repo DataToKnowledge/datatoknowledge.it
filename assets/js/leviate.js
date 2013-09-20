@@ -307,46 +307,6 @@
 						$filter.find( 'li a[data-filter="*"]' ).parent().addClass( 'active' );
 						$filterActive.text( $filter.find( 'li a[data-filter="*"]' ).text() );
 
-						// Portfolio Popup
-						if( $.fn.magnificPopup ) {
-							$container.find( '.item .item-link' ).magnificPopup({
-								type: 'ajax', 
-								ajax: {
-									settings: {
-										cache: false
-									}
-								}, 
-								removalDelay: 300, 
-								mainClass: 'mfp-zoom-in', 
-								overflowY: 'scroll', 
-								callbacks: {
-									parseAjax: function( jqXHR ) {
-										var response = $.parseJSON( jqXHR.responseText );
-										jqXHR.responseText = createPopupContent( response );
-									}, 
-									updateStatus: function( data ) {
-										if( data.status === 'ready' ) {
-											if( $.fn.fitVids ) {
-												$( this.contentContainer ).find( '.item-popup-block .media' ).fitVids();
-											}
-
-											if( $.fn.cycle ) {
-												$( this.contentContainer ).find( '.item-media.cycle-slider' ).cycle({
-													slides: '> .media', 
-													swipe: true
-												});
-											}
-										}
-									}, 
-									close: function() {
-										if( $.fn.cycle ) {
-											$( this.contentContainer ).find( '.item-media.cycle-slider' ).cycle( 'destroy' );
-										}
-									}
-								}
-							});
-						}
-
 					});
 
 				});
