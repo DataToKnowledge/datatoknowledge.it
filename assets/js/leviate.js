@@ -371,4 +371,45 @@
 
 	});
 
+
+		/* ==========================================================================
+			Google Analytics
+		============================================================================= */
+
+		$('#btn-about').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'btn-about');
+		});
+		$('#btn-services').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'btn-services');
+		});
+		$('#btn-work').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'btn-work');
+		});
+		$('#btn-contact').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'btn-contact');
+		});
+
+		$('#wtl-preview').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'wtl-preview-click');
+			ga('send', 'event', 'button', 'hover', 'wtl-preview-hover');
+		});
+
+		$('#mail').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'mail-click');
+			ga('send', 'event', 'button', 'hover', 'mail-hover');
+		});
+
+		$('.zocial-facebook').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'icon-facebook-click');
+			ga('send', 'event', 'button', 'hover', 'icon-facebook-hover');
+		});
+		$('.zocial-linkedin').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'icon-linkedin-click');
+			ga('send', 'event', 'button', 'hover', 'icon-linkedin-hover');
+		});
+		$('.zocial-googleplus').on('click', function() {
+			ga('send', 'event', 'button', 'click', 'icon-googleplus-click');
+			ga('send', 'event', 'button', 'hover', 'icon-googleplus-hover');
+		});
+
 }) ( jQuery, window, document );
