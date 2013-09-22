@@ -1,4 +1,4 @@
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *
  * Leviate v1.0 - Template Script
  *
@@ -54,10 +54,10 @@
 						var options = {
 							map: {
 								options: {
-									zoom: $( this ).data( 'zoom' ) || 1, 
-									center: [ $( this ).data( 'center-lat' ), $( this ).data( 'center-lng' ) ], 
-									scrollwheel: false, 
-									mapTypeControl: false, 
+									zoom: $( this ).data( 'zoom' ) || 1,
+									center: [ $( this ).data( 'center-lat' ), $( this ).data( 'center-lng' ) ],
+									scrollwheel: false,
+									mapTypeControl: false,
 									streetViewControl: false,
 									panControl: false,
 									styles: [
@@ -68,7 +68,7 @@
 										}
 									]
 								}
-							}, 
+							},
 							marker: {
 								latLng:[ $( this ).data( 'marker-lat' ), $( this ).data( 'marker-lng' ) ]
 							}
@@ -109,8 +109,8 @@
 		(function() {
 			if( typeof responsiveNav !== 'undefined' ) {
 				var nav = responsiveNav( '#zw-nav', {
-					insert: 'before', 
-					animate: !$.isHandheld, 
+					insert: 'before',
+					animate: !$.isHandheld,
 					label: '<span></span>'
 				});
 
@@ -154,22 +154,22 @@
 		if( $.fn.cycle ) {
 
 			$( '.slider-block .cycle-slider' ).cycle({
-				slides: '> .slide-wrap', 
-				fx: 'scrollHorz', 
-				speed: 1200, 
-				swipe: true, 
-				loader: 'wait', 
+				slides: '> .slide-wrap',
+				fx: 'scrollHorz',
+				speed: 1200,
+				swipe: true,
+				loader: 'wait',
 				easing: 'easeInOutExpo'
 			}).on( 'cycle-before', function( e, hash, o, i, forward ) {
 
-				var distance = $( window ).width() * 2, 
-					oDistance = (forward? distance : -distance) + 'px', 
-					iDistance = (forward? -distance : distance) + 'px', 
-					oCaption = $( o ).find( '.caption-box' ), 
-					iCaption = $( i ).find( '.caption-box' ), 
+				var distance = $( window ).width() * 2,
+					oDistance = (forward? distance : -distance) + 'px',
+					iDistance = (forward? -distance : distance) + 'px',
+					oCaption = $( o ).find( '.caption-box' ),
+					iCaption = $( i ).find( '.caption-box' ),
 					animOpts = {
-						'easing': 'easeInOutExpo', 
-						'duration': 1200, 
+						'easing': 'easeInOutExpo',
+						'duration': 1200,
 						'complete': function() {
 							$( this ).css( 'marginLeft', '' );
 						}
@@ -201,9 +201,9 @@
 
 			(function() {
 				function createPopupContent( data ) {
-					return '<div class="item-detail item-popup-block clearfix">' + 
-						'<div class="item-media ' + (data.enableslider? 'cycle-slider' : '') + '">' + 
-							(data.enableslider? '<div class="cycle-next"></div><div class="cycle-prev"></div>' : '') + 
+					return '<div class="item-detail item-popup-block clearfix">' +
+						'<div class="item-media ' + (data.enableslider? 'cycle-slider' : '') + '">' +
+							(data.enableslider? '<div class="cycle-next"></div><div class="cycle-prev"></div>' : '') +
 							(data.media? $.map( data.media, function( media ) {
 								var result = '';
 								switch( media.type ) {
@@ -213,21 +213,21 @@
 									case 'video':
 										result = media.embed;
 										break;
-									default: 
+									default:
 										break;
 								}
 
 								return '<div class="media">' + result + '</div>';
-							}).join( '' ) : '') + 
-						'</div>' + 
-						'<div class="item-info">' + 
-							'<h3 class="title">' + data.title + '</h3>' + 
-							data.description + 
-							'<div class="clearfix">' + 
-								'<a href="' + data.url + '" class="btn btn-primary view-work" target="_blank">View Work</a>' + 
-								'<a href="#" class="item-like"><i class="icon-heart"></i>' + data.likes + '</a>' + 
-							'</div>' + 
-						'</div>' + 
+							}).join( '' ) : '') +
+						'</div>' +
+						'<div class="item-info">' +
+							'<h3 class="title">' + data.title + '</h3>' +
+							data.description +
+							'<div class="clearfix">' +
+								'<a href="' + data.url + '" class="btn btn-primary view-work" target="_blank">View Work</a>' +
+								'<a href="#" class="item-like"><i class="icon-heart"></i>' + data.likes + '</a>' +
+							'</div>' +
+						'</div>' +
 					'</div>';
 				}
 
@@ -246,7 +246,7 @@
 
 						// Initialize Isotope
 						$( this ).isotope({
-							itemSelector: '.item', 
+							itemSelector: '.item',
 							masonry: {
 								columnWidth: $container.width() / 12
 							}
@@ -288,7 +288,7 @@
 		if( $.fn.lazyload ) {
 
 			$( 'img[data-original]' ).lazyload({
-				effect: 'fadeIn', 
+				effect: 'fadeIn',
 				load: function() {
 					$( this ).parent().addClass( 'lazyloaded' );
 				}
