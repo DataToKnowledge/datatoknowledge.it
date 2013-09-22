@@ -2575,3 +2575,7 @@ only screen and (min-resolution: 2dppx) {
 .illustration {
   text-align: center
 }
+
+#model {
+  margin-bottom: 20px
+}
