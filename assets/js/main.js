@@ -225,7 +225,7 @@
 							data.description +
 							'<div class="clearfix">' +
 								'<a href="' + data.url + '" class="btn btn-primary view-work" target="_blank">View Work</a>' +
-								'<a href="#" class="item-like"><i class="icon-heart"></i>' + data.likes + '</a>' +
+								'<a href="#" class="item-like"><i class="fa fa-heart"></i>' + data.likes + '</a>' +
 							'</div>' +
 						'</div>' +
 					'</div>';
@@ -329,23 +329,23 @@
 			ga('send', 'event', 'contact', 'hover', 'mail-hover');
 		});
 
-		$('.zocial-facebook').on('click', function() {
-			ga('send', 'event', 'social', 'click', 'icon-facebook-click');
+		$('.fa-facebook').on('click', function() {
+			ga('send', 'event', 'social', 'click', 'fa-facebook-click');
 		});
-		$('.zocial-facebook').hover( function() {
-			ga('send', 'event', 'social', 'hover', 'icon-facebook-hover');
+		$('.fa-facebook').hover( function() {
+			ga('send', 'event', 'social', 'hover', 'fa-facebook-hover');
 		});
-		$('.zocial-linkedin').on('click', function() {
-			ga('send', 'event', 'social', 'click', 'icon-linkedin-click');
+		$('.fa-linkedin').on('click', function() {
+			ga('send', 'event', 'social', 'click', 'fa-linkedin-click');
 		});
-		$('.zocial-linkedin').hover( function() {
-			ga('send', 'event', 'social', 'hover', 'icon-linkedin-hover');
+		$('.fa-linkedin').hover( function() {
+			ga('send', 'event', 'social', 'hover', 'fa-linkedin-hover');
 		});
-		$('.zocial-googleplus').on('click', function() {
-			ga('send', 'event', 'social', 'click', 'icon-googleplus-click');
+		$('.fa-google-plus').on('click', function() {
+			ga('send', 'event', 'social', 'click', 'fa-googleplus-click');
 		});
-		$('.zocial-googleplus').hover( function() {
-			ga('send', 'event', 'social', 'hover', 'icon-googleplus-hover');
+		$('.fa-google-plus').hover( function() {
+			ga('send', 'event', 'social', 'hover', 'fa-googleplus-hover');
 		});
 
 }) ( jQuery, window, document );

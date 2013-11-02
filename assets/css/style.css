@@ -683,7 +683,7 @@ input.placeholder, textarea.placeholder {
 }
 
 .service .service-icon [class*="icon-"],
-.service .service-icon [class*="zocial-"] {
+.service .service-icon [class*="fa-"] {
 	line-height: 80px;
 	font-size: 64px;
 }
