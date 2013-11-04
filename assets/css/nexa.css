@@ -24,22 +24,22 @@
 
 @font-face {
     font-family: 'nexa_boldregular';
-    src: url('Nexa_Free_Bold-webfont.eot');
-    src: url('Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Nexa_Free_Bold-webfont.woff') format('woff'),
-         url('Nexa_Free_Bold-webfont.ttf') format('truetype'),
-         url('Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+    src: url('../fonts/Nexa_Free_Bold-webfont.eot');
+    src: url('../fonts/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa_Free_Bold-webfont.woff') format('woff'),
+         url('../fonts/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'nexa_lightregular';
-    src: url('Nexa_Free_Light-webfont.eot');
-    src: url('Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Nexa_Free_Light-webfont.woff') format('woff'),
-         url('Nexa_Free_Light-webfont.ttf') format('truetype'),
-         url('Nexa_Free_Light-webfont.svg#nexa_lightregular') format('svg');
+    src: url('../fonts/Nexa_Free_Light-webfont.eot');
+    src: url('../fonts/Nexa_Free_Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Nexa_Free_Light-webfont.woff') format('woff'),
+         url('../fonts/Nexa_Free_Light-webfont.ttf') format('truetype'),
+         url('../fonts/Nexa_Free_Light-webfont.svg#nexa_lightregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
