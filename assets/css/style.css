@@ -1006,6 +1006,11 @@ input.placeholder, textarea.placeholder {
 	margin-bottom: 14px;
 }
 
+.logo-header {
+  margin: auto 40px 20px;
+  height: 80px;
+}
+
 /* ==========================================================================
 	Media Queries
 ============================================================================= */
