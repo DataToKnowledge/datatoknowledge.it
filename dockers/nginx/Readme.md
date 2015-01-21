@@ -31,4 +31,9 @@ After few seconds, open `http://<host>` to see the welcome page.
 
 starting from the datatoknowledge.it folder
 
-    docker run -d -p 80:80 -v "$(pwd)"/dockers/nginx/sites-enabled:/etc/nginx/sites-enabled -v "$(pwd)"/dockers/nginx/log:/var/log/nginx -v "$(pwd)":/var/www/ wheretolive/nginx_dtk
+	1. docker run -d --name dtk2 -e VIRTUAL_HOST=datatoknowledge.it -v "$(pwd)"/dockers/nginx/sites-enabled:/etc/nginx/sites-enabled -v "$(pwd)"/dockers/nginx/log:/var/log/nginx -v "$(pwd)":/var/www/ wheretolive/nginx_dtk
+
+    2. docker run -d -p 80:80 -v "$(pwd)"/dockers/nginx/sites-enabled:/etc/nginx/sites-enabled -v "$(pwd)"/dockers/nginx/log:/var/log/nginx -v "$(pwd)":/var/www/ wheretolive/nginx_dtk
+    
+the configuration 1 should be used after reading [this link](http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/).
+The configuration 2 is deprecated
