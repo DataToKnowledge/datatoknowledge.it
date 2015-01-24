@@ -14,7 +14,7 @@ this project is build using [docker](http://docker.io) and [dokku-alt](https://g
 
 1. add the remote dokku branch with the name of the app dtk
 
-    git add remote dokku dokku@datatoknowledge.it:dtk
+    git remote add dokku dokku@datatoknowledge.it:dtk
 
 2. push the local branch to the remote dokku master. Let suppose that the local branch is develop the command should be
 
