@@ -28,3 +28,6 @@ this project is build using [docker](http://docker.io) and [dokku-alt](https://g
 
     ssh -t dokku@datatoknowledge.it domains:set dtk www.datatoknowledge.it
 
+ the command accepts multiple set, but we can also set redirects
+    ssh -t dokku@datatoknowledge.it domains:redirect:set dtk datatoknowledge.it
+
